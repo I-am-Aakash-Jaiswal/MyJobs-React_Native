@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     tintColor: "#F37453",
   },
   applyBtn: {
-    flex: 1,
+     flex:1,
     backgroundColor: "#FE7654",
     height: "100%",
     justifyContent: "center",
