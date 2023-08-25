@@ -17,8 +17,24 @@ function JobDetails() {
     const [refreshing, setRefreshing] = useState(false);
     const [activeTab, setActiveTab] = useState(tabs[0]);
  
-    const onRefresh= ()=>{     
-    }
+    const onRefresh= useCallback(()=>{
+        setRefreshing(true);
+        // refetch();
+        setRefreshing(false);
+    },[])
+
+  
+
+    // const {data , isLoading, error, refetch} = useFetch('job-details', {
+    //     job_id:params.id
+    // })
+
+    //donot forget to do data[0] everywhere once you call the api
+
+    const data= tempData[0];
+    const isLoading = false;
+    const error = false;
+
 
     const displayTabContent =()=> {
         switch(activeTab){
@@ -46,15 +62,7 @@ function JobDetails() {
         }
     }
 
-    // const {data , isLoading, error, refetch} = useFetch('job-details', {
-    //     job_id:params.id
-    // })
 
-    //donot forget to do data[0] everywhere once you call the api
-
-    const data= tempData[0];
-    const isLoading = false;
-    const error = false;
   return (
     <SafeAreaView style ={{flex:1 , backgroundColor : COLORS.lightWhite}}>
     <Stack.Screen
