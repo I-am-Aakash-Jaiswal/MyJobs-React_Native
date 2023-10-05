@@ -18,8 +18,6 @@ function JobDetails() {
     const [activeTab, setActiveTab] = useState(tabs[0]);
  
     const onRefresh= useCallback(()=>{
-
-        
         setRefreshing(true);
         // refetch();
         setRefreshing(false);
