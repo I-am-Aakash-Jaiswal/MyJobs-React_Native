@@ -24,6 +24,8 @@ function JobDetails() {
     },[])
 
 
+
+
     const data= tempData[0];
     const isLoading = false;
     const error = false;
