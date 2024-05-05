@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         color: COLORS.primary,
     },
     noOfSearchedJobs: {
-        marginTop: 2,
+        marginTop: 3,
         fontFamily: FONT.medium,
         fontSize: SIZES.small,
         color: COLORS.primary,
