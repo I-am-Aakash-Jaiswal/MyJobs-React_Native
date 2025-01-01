@@ -4,7 +4,6 @@ import { View, Text, Image  } from 'react-native'
 import styles from './company.style'
 import {icons} from '../../../constants'
 import { checkImageURL } from '../../../utils'
-import { CommonActions } from '@react-navigation/routers'
 
 const Company = ({companyLogo, jobTitle, companyName, Location}) => {
 
